@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Notch</title>
+<meta name="description" content="Help and contact for Notch, the strength training app for iPhone.">
+<style>
+  :root {
+    --bg: #f2f4f3;
+    --surface: #ffffff;
+    --text: #1c2220;
+    --dim: #68726e;
+    --accent: #2f8f7d;
+    --rule: #e0e5e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #111513; --surface: #1a201e; --text: #e8ecea;
+      --dim: #9aa4a0; --accent: #5fc3ae; --rule: #2a322f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #111513; --surface: #1a201e; --text: #e8ecea;
+    --dim: #9aa4a0; --accent: #5fc3ae; --rule: #2a322f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 16px 80px;
+    background: var(--bg); color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  header { padding: 56px 0 28px; }
+  .eyebrow { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); margin: 0 0 10px; }
+  h1 { font-size: clamp(30px, 7vw, 42px); line-height: 1.15; margin: 0 0 10px; letter-spacing: -.02em; }
+  .sub { color: var(--dim); margin: 0; }
+  h2 { font-size: 21px; margin: 38px 0 14px; letter-spacing: -.01em; }
+  p { margin: 0 0 16px; }
+  .q {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 12px; padding: 18px 20px; margin-bottom: 12px;
+  }
+  .q h3 { margin: 0 0 8px; font-size: 16px; }
+  .q p:last-child { margin-bottom: 0; }
+  .contact {
+    background: var(--surface); border-left: 3px solid var(--accent);
+    border-radius: 0 12px 12px 0; padding: 20px 22px; margin-top: 8px;
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--dim); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Notch</p>
+    <h1>Support</h1>
+    <p class="sub">Strength training for iPhone.</p>
+  </header>
+
+  <h2>Common questions</h2>
+
+  <div class="q">
+    <h3>My weight and calories aren't showing up</h3>
+    <p>Notch reads both from Apple Health. Open the Health app, go to Sharing → Apps →
+    Notch, and check the switches are on. If a screen shows a "Showing example data"
+    banner, Health has not returned anything yet — those figures are generated, not yours.</p>
+    <p>MyFitnessPal only writes nutrition to Apple Health for Premium subscribers. Weight
+    from a smart scale syncs regardless.</p>
+  </div>
+
+  <div class="q">
+    <h3>I tapped "Grant access" and nothing happened</h3>
+    <p>iOS shows its Health permission sheet only once per app. After that, the only place
+    access can be changed is the Health app, under Sharing → Apps → Notch.</p>
+  </div>
+
+  <div class="q">
+    <h3>Why is it asking me to lift more than I managed last time?</h3>
+    <p>Each session is built from your last one. If you logged more reps than your target
+    at the reps-in-reserve you entered, the next session adds load. Logging your
+    reps-in-reserve honestly is what keeps those numbers sensible.</p>
+  </div>
+
+  <div class="q">
+    <h3>How do I change program?</h3>
+    <p>Programs tab → pick one → "Add to my routines". Your existing routines stay where
+    they are; nothing is overwritten.</p>
+  </div>
+
+  <div class="q">
+    <h3>Where is my data, and how do I back it up?</h3>
+    <p>Everything is stored on your iPhone and nowhere else — there is no account and no
+    cloud sync. An iPhone backup (iCloud or to a computer) includes it. Deleting the app
+    deletes all of it.</p>
+  </div>
+
+  <h2>Get in touch</h2>
+  <div class="contact">
+    <p>Bugs, questions or feature requests:</p>
+    <p><strong><a href="mailto:notch.app.support26@gmail.com">notch.app.support26@gmail.com</a></strong></p>
+    <p>If you're reporting a bug, your iPhone model and iOS version help a lot.</p>
+  </div>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>

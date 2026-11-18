@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notch</title>
+<meta name="description" content="Notch — strength training for iPhone.">
+<style>
+  :root { --bg:#f2f4f3; --surface:#fff; --text:#1c2220; --dim:#68726e; --accent:#2f8f7d; --rule:#e0e5e3; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg:#111513; --surface:#1a201e; --text:#e8ecea; --dim:#9aa4a0; --accent:#5fc3ae; --rule:#2a322f; } }
+  :root[data-theme="dark"] { --bg:#111513; --surface:#1a201e; --text:#e8ecea; --dim:#9aa4a0; --accent:#5fc3ae; --rule:#2a322f; }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:0 16px 80px; background:var(--bg); color:var(--text);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; }
+  main { max-width:34rem; margin:0 auto; }
+  header { padding:72px 0 10px; }
+  .eyebrow { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--dim); margin:0 0 12px; }
+  h1 { font-size:clamp(34px,8vw,46px); line-height:1.1; margin:0 0 10px; letter-spacing:-.02em; }
+  .sub { color:var(--dim); margin:0 0 36px; font-size:19px; }
+  .links { display:grid; gap:12px; }
+  a.card { display:block; background:var(--surface); border:1px solid var(--rule); border-radius:12px;
+    padding:18px 20px; text-decoration:none; color:var(--text); }
+  a.card:hover { border-color:var(--accent); }
+  a.card strong { display:block; margin-bottom:3px; }
+  a.card span { color:var(--dim); font-size:15px; }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--rule); color:var(--dim); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Notch</p>
+    <h1>Lift more than last time.</h1>
+    <p class="sub">Strength training for iPhone.</p>
+  </header>
+  <div class="links">
+    <a class="card" href="privacy.html"><strong>Privacy Policy</strong><span>What the app stores, and what it never does.</span></a>
+    <a class="card" href="support.html"><strong>Support</strong><span>Common questions, and how to get in touch.</span></a>
+  </div>
+  <footer>Notch for iOS.</footer>
+</main>
+</body>
+</html>
